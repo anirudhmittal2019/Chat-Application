@@ -79,7 +79,7 @@ public class Client extends JFrame{
             public void keyReleased(KeyEvent e) {
                 if(e.getKeyCode()==10){
                     String contentToSend=messageInput.getText();
-                    messageArea.append("Me : "+contentToSend+"/n");
+                    messageArea.append("Me : "+contentToSend+"\n");
                     out.println(contentToSend);
                     out.flush();
                     messageInput.setText("");
@@ -105,7 +105,7 @@ public class Client extends JFrame{
                     break;
                 }
               //  System.out.println("Server : "+msg);
-                messageArea.append("Server : "+msg+"/n");
+                messageArea.append("Server : "+msg+"\n");
                 }
             }
             catch (Exception e) {
